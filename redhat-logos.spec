@@ -4,7 +4,7 @@
 Name: redhat-logos
 Summary: Ascendos logos and artwork. 
 Version: 60.0.14
-Release: 1.ascendos6
+Release: 2.asc6
 Group: System Environment/Base
 # No upstream, do in dist-cvs
 Source0: redhat-logos-%{version}.tar.bz2
