@@ -44,13 +44,12 @@ for i in redhat-pixmaps/*; do
 done
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/backgrounds/
-for i in backgrounds/*.png backgrounds/tuv.xml backgrounds/default.xml; do
+for i in backgrounds/*.png backgrounds/default.xml; do
   install -p -m 644 $i $RPM_BUILD_ROOT%{_datadir}/backgrounds/
 done
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/gnome-background-properties/
 install -p -m 644 backgrounds/desktop-backgrounds-default.xml $RPM_BUILD_ROOT%{_datadir}/gnome-background-properties/
-install -p -m 644 backgrounds/desktop-backgrounds-tuv.xml $RPM_BUILD_ROOT%{_datadir}/gnome-background-properties/
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/firstboot/themes/RHEL
 for i in firstboot/* ; do
@@ -62,9 +61,9 @@ for i in pixmaps/* ; do
   install -p -m 644 $i $RPM_BUILD_ROOT%{_datadir}/pixmaps
 done
 
-mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/glow
-for i in plymouth/glow/* ; do
-  install -p -m 644 $i $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/glow
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/charge
+for i in plymouth/charge/* ; do
+  install -p -m 644 $i $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/charge
 done
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/plymouth/themes/rings
