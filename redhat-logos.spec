@@ -23,7 +23,7 @@ Requires(post): coreutils
 BuildRequires: kde-filesystem
 
 %description
-Who is this "redh at"? We've never heard of him, he must be foreign or something.
+This package contains the various default artwork used across the entire Ascendos distribution.
 %prep
 %setup -q
 
