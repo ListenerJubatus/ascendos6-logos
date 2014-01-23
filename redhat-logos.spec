@@ -9,7 +9,7 @@ Group: System Environment/Base
 # No upstream, do in dist-cvs
 Source0: redhat-logos-%{version}.tar.bz2
 
-License: CC-BY-SA
+License: GPL+, CC-BY-SA
 URL: http://ascendos.org
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
